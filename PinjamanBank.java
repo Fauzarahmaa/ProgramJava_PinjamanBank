@@ -22,11 +22,11 @@ public class PinjamanBank{
     						    do{
     							   System.out.print("Nama Depan: ");
 								   namaDepan= new Scanner(System.in).nextLine();
-                                }while (!namaDepan.matches("[a-zA-Z.]+"));
+                                }while(!namaDepan.matches("[a-zA-Z.\\s]+"));
                                 do{
                                     System.out.print("Nama Belakang: ");
                                     namaBelakang= new Scanner(System.in).nextLine();
-                                }while(!namaBelakang.matches("[a-zA-Z.]+"));
+                                }while(!namaBelakang.matches("[a-zA-Z.\\s]+"));
 
                                 do{
                                     System.out.print("No. Handphone: ");
